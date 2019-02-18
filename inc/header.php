@@ -10,33 +10,33 @@
 							<nav class="main_nav">
 								<ul>
 									<li class="hassubs active">
-										<a href="index.html">Home</a>
+										<a href="index.php">Home</a>
 										<ul>
-											<li><a href="categories.html">Categories</a></li>
-											<li><a href="product.html">Product</a></li>
-											<li><a href="cart.html">Cart</a></li>
-											<li><a href="checkout.html">Check out</a></li>
-											<li><a href="contact.html">Contact</a></li>
+											<li><a href="categories.php">Categoria</a></li>
+											<li><a href="product.php">Produtos</a></li>
+											<li><a href="cart.php">Carrinho</a></li>
+											<li><a href="checkout.php">Confira</a></li>
+											<li><a href="contact.php">Contato</a></li>
 										</ul>
 									</li>
 									<li class="hassubs">
-										<a href="categories.html">Categories</a>
+										<a href="categories.php">Categorias</a>
 										<ul>
-											<li><a href="categories.html">Category</a></li>
-											<li><a href="categories.html">Category</a></li>
-											<li><a href="categories.html">Category</a></li>
-											<li><a href="categories.html">Category</a></li>
-											<li><a href="categories.html">Category</a></li>
+											<li><a href="categories.php">Category</a></li>
+											<li><a href="categories.php">Category</a></li>
+											<li><a href="categories.php">Category</a></li>
+											<li><a href="categories.php">Category</a></li>
+											<li><a href="categories.php">Category</a></li>
 										</ul>
 									</li>
-									<li><a href="#">Accessories</a></li>
-									<li><a href="#">Offers</a></li>
-									<li><a href="contact.html">Contact</a></li>
+									<li><a href="#">Acessórios</a></li>
+									<li><a href="#">Ofertas</a></li>
+									<li><a href="contact.php">Contato</a></li>
 								</ul>
 							</nav>
 							<div class="header_extra ml-auto">
 								<div class="shopping_cart">
-									<a href="cart.html">
+									<a href="cart.php">
 										<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 												 viewBox="0 0 489 489" style="enable-background:new 0 0 489 489;" xml:space="preserve">
 											<g>
@@ -47,8 +47,9 @@
 													c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5v-41h45.2l26.9,302.3C412.8,445.2,392.1,462,366.8,462z"/>
 											</g>
 										</svg>
-										<div>Cart <span>(0)</span></div>
+										<div>Carrinho</div>
 									</a>
+									
 								</div>
 								<div class="search">
 									<div class="search_icon">
@@ -104,3 +105,53 @@
 			</ul>
 		</div>
 	</header>
+
+	<!-- Menu -->
+
+	<div class="menu menu_mm trans_300">
+		<div class="menu_container menu_mm">
+			<div class="page_menu_content">
+							
+				<div class="page_menu_search menu_mm">
+					<form action="#">
+						<input type="search" required="required" class="page_menu_search_input menu_mm" placeholder="Search for products...">
+					</form>
+				</div>
+				<ul class="page_menu_nav menu_mm">
+					<li class="page_menu_item has-children menu_mm">
+						<a href="index.php">Home<i class="fa fa-angle-down"></i></a>
+						<ul class="page_menu_selection menu_mm">
+							<li class="page_menu_item menu_mm"><a href="categories.php">Categorias<i class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="product.php">Produtos<i class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="cart.php">Carrinho<i class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="checkout.php">Confira<i class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="contact.php">Contato<i class="fa fa-angle-down"></i></a></li>
+						</ul>
+					</li>
+					<li class="page_menu_item has-children menu_mm">
+						<a href="categories.php">Categorias<i class="fa fa-angle-down"></i></a>
+						<ul class="page_menu_selection menu_mm">
+							<li class="page_menu_item menu_mm"><a href="categories.php">Categoria<i class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="categories.php">Category<i class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="categories.php">Category<i class="fa fa-angle-down"></i></a></li>
+							<li class="page_menu_item menu_mm"><a href="categories.php">Category<i class="fa fa-angle-down"></i></a></li>
+						</ul>
+					</li>
+					<li class="page_menu_item menu_mm"><a href="index.php">Acessórios<i class="fa fa-angle-down"></i></a></li>
+					<li class="page_menu_item menu_mm"><a href="index.php">Ofertas<i class="fa fa-angle-down"></i></a></li>
+					<li class="page_menu_item menu_mm"><a href="contact.php">Contato<i class="fa fa-angle-down"></i></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="menu_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+
+		<div class="menu_social">
+			<ul>
+				<li><a  href="https://br.pinterest.com/"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+	</div>

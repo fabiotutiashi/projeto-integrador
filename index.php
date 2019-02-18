@@ -21,55 +21,7 @@
 <!-- Incluindo o header -->
 <?php	include 'inc/header.php'; ?>
 
-	<!-- Menu -->
-
-	<div class="menu menu_mm trans_300">
-		<div class="menu_container menu_mm">
-			<div class="page_menu_content">
-							
-				<div class="page_menu_search menu_mm">
-					<form action="#">
-						<input type="search" required="required" class="page_menu_search_input menu_mm" placeholder="Search for products...">
-					</form>
-				</div>
-				<ul class="page_menu_nav menu_mm">
-					<li class="page_menu_item has-children menu_mm">
-						<a href="index.html">Home<i class="fa fa-angle-down"></i></a>
-						<ul class="page_menu_selection menu_mm">
-							<li class="page_menu_item menu_mm"><a href="categories.html">Categories<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="product.html">Product<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="cart.html">Cart<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="checkout.html">Checkout<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="contact.html">Contact<i class="fa fa-angle-down"></i></a></li>
-						</ul>
-					</li>
-					<li class="page_menu_item has-children menu_mm">
-						<a href="categories.html">Categories<i class="fa fa-angle-down"></i></a>
-						<ul class="page_menu_selection menu_mm">
-							<li class="page_menu_item menu_mm"><a href="categories.html">Category<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="categories.html">Category<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="categories.html">Category<i class="fa fa-angle-down"></i></a></li>
-							<li class="page_menu_item menu_mm"><a href="categories.html">Category<i class="fa fa-angle-down"></i></a></li>
-						</ul>
-					</li>
-					<li class="page_menu_item menu_mm"><a href="index.html">Accessories<i class="fa fa-angle-down"></i></a></li>
-					<li class="page_menu_item menu_mm"><a href="#">Offers<i class="fa fa-angle-down"></i></a></li>
-					<li class="page_menu_item menu_mm"><a href="contact.html">Contact<i class="fa fa-angle-down"></i></a></li>
-				</ul>
-			</div>
-		</div>
-
-		<div class="menu_close"><i class="fa fa-times" aria-hidden="true"></i></div>
-
-		<div class="menu_social">
-			<ul>
-				<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-				<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-				<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-				<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-			</ul>
-		</div>
-	</div>
+	
 	
 	<!-- Home -->
 
@@ -174,7 +126,7 @@
 					</div>
 					<div class="avds_small_content">
 						<div class="avds_title">Smart Phones</div>
-						<div class="avds_link"><a href="categories.html">See More</a></div>
+						<div class="avds_link"><a href="categories.php">See More</a></div>
 					</div>
 				</div>
 			</div>
@@ -184,7 +136,7 @@
 					<div class="avds_large_content">
 						<div class="avds_title">Professional Cameras</div>
 						<div class="avds_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed viver ra velit venenatis fermentum luctus.</div>
-						<div class="avds_link avds_link_large"><a href="categories.html">See More</a></div>
+						<div class="avds_link avds_link_large"><a href="categories.php">See More</a></div>
 					</div>
 				</div>
 			</div>
@@ -203,9 +155,9 @@
 						<!-- Product -->
 						<div class="product">
 							<div class="product_image"><img src="images/product_1.jpg" alt=""></div>
-							<div class="product_extra product_new"><a href="categories.html">New</a></div>
+							<div class="product_extra product_new"><a href="categories.php">New</a></div>
 							<div class="product_content">
-								<div class="product_title"><a href="product.html">Smart Phone</a></div>
+								<div class="product_title"><a href="product.php">Smart Phone</a></div>
 								<div class="product_price">$670</div>
 							</div>
 						</div>
@@ -213,9 +165,9 @@
 						<!-- Product -->
 						<div class="product">
 							<div class="product_image"><img src="images/product_2.jpg" alt=""></div>
-							<div class="product_extra product_sale"><a href="categories.html">Sale</a></div>
+							<div class="product_extra product_sale"><a href="categories.php">Sale</a></div>
 							<div class="product_content">
-								<div class="product_title"><a href="product.html">Smart Phone</a></div>
+								<div class="product_title"><a href="product.php">Smart Phone</a></div>
 								<div class="product_price">$670</div>
 							</div>
 						</div>
@@ -224,7 +176,7 @@
 						<div class="product">
 							<div class="product_image"><img src="images/product_3.jpg" alt=""></div>
 							<div class="product_content">
-								<div class="product_title"><a href="product.html">Smart Phone</a></div>
+								<div class="product_title"><a href="product.php">Smart Phone</a></div>
 								<div class="product_price">$670</div>
 							</div>
 						</div>
@@ -233,7 +185,7 @@
 						<div class="product">
 							<div class="product_image"><img src="images/product_4.jpg" alt=""></div>
 							<div class="product_content">
-								<div class="product_title"><a href="product.html">Smart Phone</a></div>
+								<div class="product_title"><a href="product.php">Smart Phone</a></div>
 								<div class="product_price">$670</div>
 							</div>
 						</div>
@@ -242,7 +194,7 @@
 						<div class="product">
 							<div class="product_image"><img src="images/product_5.jpg" alt=""></div>
 							<div class="product_content">
-								<div class="product_title"><a href="product.html">Smart Phone</a></div>
+								<div class="product_title"><a href="product.php">Smart Phone</a></div>
 								<div class="product_price">$670</div>
 							</div>
 						</div>
@@ -250,9 +202,9 @@
 						<!-- Product -->
 						<div class="product">
 							<div class="product_image"><img src="images/product_6.jpg" alt=""></div>
-							<div class="product_extra product_hot"><a href="categories.html">Hot</a></div>
+							<div class="product_extra product_hot"><a href="categories.php">Hot</a></div>
 							<div class="product_content">
-								<div class="product_title"><a href="product.html">Smart Phone</a></div>
+								<div class="product_title"><a href="product.php">Smart Phone</a></div>
 								<div class="product_price">$670</div>
 							</div>
 						</div>
@@ -261,7 +213,7 @@
 						<div class="product">
 							<div class="product_image"><img src="images/product_7.jpg" alt=""></div>
 							<div class="product_content">
-								<div class="product_title"><a href="product.html">Smart Phone</a></div>
+								<div class="product_title"><a href="product.php">Smart Phone</a></div>
 								<div class="product_price">$670</div>
 							</div>
 						</div>
@@ -269,9 +221,9 @@
 						<!-- Product -->
 						<div class="product">
 							<div class="product_image"><img src="images/product_8.jpg" alt=""></div>
-							<div class="product_extra product_sale"><a href="categories.html">Hot</a></div>
+							<div class="product_extra product_sale"><a href="categories.php">Hot</a></div>
 							<div class="product_content">
-								<div class="product_title"><a href="product.html">Smart Phone</a></div>
+								<div class="product_title"><a href="product.php">Smart Phone</a></div>
 								<div class="product_price">$670</div>
 							</div>
 						</div>
@@ -294,7 +246,7 @@
 						<div class="avds_xl_content">
 							<div class="avds_title">Amazing Devices</div>
 							<div class="avds_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus.</div>
-							<div class="avds_link avds_xl_link"><a href="categories.html">See More</a></div>
+							<div class="avds_link avds_xl_link"><a href="categories.php">See More</a></div>
 						</div>
 					</div>
 				</div>
