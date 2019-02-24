@@ -27,7 +27,7 @@
 
 	<div class="home">
 		<div class="home_container">
-			<div class="home_background" style="background-image:url(images/categories.jpg)"></div>
+			<div class="home_background" style="background-image:url(images/categoria.jpg)"></div>
 			<div class="home_content_container">
 				<div class="container">
 					<div class="row">
@@ -78,7 +78,7 @@
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="images/product_1.jpg" alt=""></div>
+							<div class="product_image"><img src="images/produto_1.jpg" alt=""></div>
 							<div class="product_extra product_new"><a href="categories.php">New</a></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.php">Smart Phone</a></div>
@@ -88,7 +88,7 @@
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="images/product_2.jpg" alt=""></div>
+							<div class="product_image"><img src="images/produto_2.jpg" alt=""></div>
 							<div class="product_extra product_sale"><a href="categories.php">Sale</a></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.php">Smart Phone</a></div>
@@ -98,7 +98,7 @@
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="images/product_3.jpg" alt=""></div>
+							<div class="product_image"><img src="images/produto_3.jpg" alt=""></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.php">Smart Phone</a></div>
 								<div class="product_price">$710</div>
@@ -107,7 +107,7 @@
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="images/product_4.jpg" alt=""></div>
+							<div class="product_image"><img src="images/produto_11.jpg" alt=""></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.php">Smart Phone</a></div>
 								<div class="product_price">$330</div>
@@ -116,7 +116,7 @@
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="images/product_5.jpg" alt=""></div>
+							<div class="product_image"><img src="images/produto_5.jpg" alt=""></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.php">Smart Phone</a></div>
 								<div class="product_price">$170</div>
@@ -125,7 +125,7 @@
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="images/product_6.jpg" alt=""></div>
+							<div class="product_image"><img src="images/produto_13.jpg" alt=""></div>
 							<div class="product_extra product_hot"><a href="categories.php">Hot</a></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.php">Smart Phone</a></div>
@@ -135,7 +135,7 @@
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="images/product_7.jpg" alt=""></div>
+							<div class="product_image"><img src="images/produto_7.jpg" alt=""></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.php">Smart Phone</a></div>
 								<div class="product_price">$70</div>
@@ -144,7 +144,7 @@
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="images/product_8.jpg" alt=""></div>
+							<div class="product_image"><img src="images/produto_8.jpg" alt=""></div>
 							<div class="product_extra product_sale"><a href="categories.php">Hot</a></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.php">Smart Phone</a></div>
@@ -154,7 +154,7 @@
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="images/product_9.jpg" alt=""></div>
+							<div class="product_image"><img src="images/produto_9.jpg" alt=""></div>
 							<div class="product_extra product_sale"><a href="categories.php">Hot</a></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.php">Smart Phone</a></div>
@@ -164,7 +164,7 @@
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="images/product_10.jpg" alt=""></div>
+							<div class="product_image"><img src="images/produto_10.jpg" alt=""></div>
 							<div class="product_extra product_sale"><a href="categories.php">Hot</a></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.php">Smart Phone</a></div>
@@ -174,7 +174,7 @@
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="images/product_11.jpg" alt=""></div>
+							<div class="product_image"><img src="images/produto_15.jpg" alt=""></div>
 							<div class="product_extra product_sale"><a href="categories.php">Hot</a></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.php">Smart Phone</a></div>
@@ -184,7 +184,7 @@
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="images/product_12.jpg" alt=""></div>
+							<div class="product_image"><img src="images/produto_12.jpg" alt=""></div>
 							<div class="product_extra product_sale"><a href="categories.php">Hot</a></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.php">Smart Phone</a></div>

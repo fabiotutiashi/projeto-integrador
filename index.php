@@ -33,7 +33,25 @@
 				
 				<!-- Slider Item -->
 				<div class="owl-item home_slider_item">
-					<div class="home_slider_background" style="background-image:url(images/home_slider_1.jpg)"></div>
+					<div class="home_slider_background" style="background-image:url(images/home_slider_1moto.jpg)"></div>
+					<div class="home_slider_content_container">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<div class="home_slider_content"  data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
+										<div class="home_slider_title">Uma nova experiência de loja online.</div>
+										<div class="home_slider_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed viverra velit venenatis fermentum luctus.</div>
+										<div class="button button_light home_button"><a href="#">Compre Agora</a></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Slider Item -->
+				<div class="owl-item home_slider_item">
+					<div class="home_slider_background" style="background-image:url(images/home_slider_1moto.jpg)"></div>
 					<div class="home_slider_content_container">
 						<div class="container">
 							<div class="row">
@@ -51,25 +69,7 @@
 
 				<!-- Slider Item -->
 				<div class="owl-item home_slider_item">
-					<div class="home_slider_background" style="background-image:url(images/home_slider_1.jpg)"></div>
-					<div class="home_slider_content_container">
-						<div class="container">
-							<div class="row">
-								<div class="col">
-									<div class="home_slider_content"  data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
-										<div class="home_slider_title">A new Online Shop experience.</div>
-										<div class="home_slider_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed viverra velit venenatis fermentum luctus.</div>
-										<div class="button button_light home_button"><a href="#">Shop Now</a></div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Slider Item -->
-				<div class="owl-item home_slider_item">
-					<div class="home_slider_background" style="background-image:url(images/home_slider_1.jpg)"></div>
+					<div class="home_slider_background" style="background-image:url(images/home_slider_1moto.jpg)"></div>
 					<div class="home_slider_content_container">
 						<div class="container">
 							<div class="row">
@@ -113,28 +113,28 @@
 	<div class="avds">
 		<div class="avds_container d-flex flex-lg-row flex-column align-items-start justify-content-between">
 			<div class="avds_small">
-				<div class="avds_background" style="background-image:url(images/avds_small.jpg)"></div>
+				<div class="avds_background" style="background-image:url(images/capacetes.jpg)"></div>
 				<div class="avds_small_inner">
 					<div class="avds_discount_container">
 						<img src="images/discount.png" alt="">
 						<div>
 							<div class="avds_discount">
 								<div>20<span>%</span></div>
-								<div>Discount</div>
+								<div>Desconto</div>
 							</div>
 						</div>
 					</div>
 					<div class="avds_small_content">
-						<div class="avds_title">Smart Phones</div>
-						<div class="avds_link"><a href="categories.php">See More</a></div>
+						<div class="avds_title">Capacetes</div>
+						<div class="avds_link"><a href="categories.php">Veja Mais</a></div>
 					</div>
 				</div>
 			</div>
 			<div class="avds_large">
-				<div class="avds_background" style="background-image:url(images/avds_large.jpg)"></div>
+				<div class="avds_background" style="background-image:url(images/motor.jpg)"></div>
 				<div class="avds_large_container">
 					<div class="avds_large_content">
-						<div class="avds_title">Professional Cameras</div>
+						<div class="avds_title">Peças para Motores</div>
 						<div class="avds_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed viver ra velit venenatis fermentum luctus.</div>
 						<div class="avds_link avds_link_large"><a href="categories.php">See More</a></div>
 					</div>
@@ -154,7 +154,7 @@
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="images/product_1.jpg" alt=""></div>
+							<div class="product_image"><img src="images/produto_1.jpg" alt=""></div>
 							<div class="product_extra product_new"><a href="categories.php">New</a></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.php">Smart Phone</a></div>
@@ -164,7 +164,7 @@
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="images/product_2.jpg" alt=""></div>
+							<div class="product_image"><img src="images/produto_2.jpg" alt=""></div>
 							<div class="product_extra product_sale"><a href="categories.php">Sale</a></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.php">Smart Phone</a></div>
@@ -174,7 +174,7 @@
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="images/product_3.jpg" alt=""></div>
+							<div class="product_image"><img src="images/produto_3.jpg" alt=""></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.php">Smart Phone</a></div>
 								<div class="product_price">$670</div>
@@ -183,7 +183,7 @@
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="images/product_4.jpg" alt=""></div>
+							<div class="product_image"><img src="images/produto_4.jpg" alt=""></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.php">Smart Phone</a></div>
 								<div class="product_price">$670</div>
@@ -192,7 +192,7 @@
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="images/product_5.jpg" alt=""></div>
+							<div class="product_image"><img src="images/produto_5.jpg" alt=""></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.php">Smart Phone</a></div>
 								<div class="product_price">$670</div>
@@ -201,7 +201,7 @@
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="images/product_6.jpg" alt=""></div>
+							<div class="product_image"><img src="images/produto_6.jpg" alt=""></div>
 							<div class="product_extra product_hot"><a href="categories.php">Hot</a></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.php">Smart Phone</a></div>
@@ -211,7 +211,7 @@
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="images/product_7.jpg" alt=""></div>
+							<div class="product_image"><img src="images/produto_7.jpg" alt=""></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.php">Smart Phone</a></div>
 								<div class="product_price">$670</div>
@@ -220,7 +220,7 @@
 
 						<!-- Product -->
 						<div class="product">
-							<div class="product_image"><img src="images/product_8.jpg" alt=""></div>
+							<div class="product_image"><img src="images/produto_8.jpg" alt=""></div>
 							<div class="product_extra product_sale"><a href="categories.php">Hot</a></div>
 							<div class="product_content">
 								<div class="product_title"><a href="product.php">Smart Phone</a></div>
@@ -242,7 +242,7 @@
 			<div class="row">
 				<div class="col">
 					<div class="avds_xl_container clearfix">
-						<div class="avds_xl_background" style="background-image:url(images/avds_xl.jpg)"></div>
+						<div class="avds_xl_background" style="background-image:url(images/avds1.jpg)"></div>
 						<div class="avds_xl_content">
 							<div class="avds_title">Amazing Devices</div>
 							<div class="avds_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus.</div>
