@@ -31,12 +31,17 @@
 									</li>
 									<li><a href="#">Acessórios</a></li>
 									<li><a href="#">Ofertas</a></li>
-									<li><a href="contact.php">Contato&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+									<li><a href="contact.php">Contato&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
 									
 
-									<a href="login.php">
-									<i class="fas fa-user-circle"></i>
-									</a>
+									<li class="hassubs">
+										<i class="fas fa-user-circle"></i>
+										<ul>
+										<a href="login.php">	<li><button type="button" class="btn btn-primary btn-lg btn-block">Entrar</button></a></li>
+										<a href="cadastroCliente.php">	<li><button type="button" class="btn btn-secondary btn-lg btn-block">Cadastrar</button></a></li>
+											
+										</ul>
+									</li>
 								</ul>
 								
 							</nav>
