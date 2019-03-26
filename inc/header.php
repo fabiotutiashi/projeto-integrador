@@ -37,8 +37,8 @@
 									<li class="hassubs">
 									<i class="fas fa-user"></i>
 										<ul>
-										<a href="login.php">	<li><button type="button" class="btn btn-primary btn-lg btn-block">Entrar</button></a></li>
-										<a href="cadastroCliente.php">	<li><button type="button" class="btn btn-secondary btn-lg btn-block">Cadastrar</button></a></li>
+										<li><a href="login.php" class="btn btn-outline-primary" role="button" aria-pressed="true">Faça seu login</a></li>
+										<span class= "float-left">ou</span><a href="cadastroCliente.php"><li> Cadastre-se</a></li>
 											
 										</ul>
 									</li>
