@@ -24,7 +24,7 @@
 
 	<div class="home">
 		<div class="home_container">
-			<div class="home_background" style="background-image:url(images/cart.jpg)"></div>
+			<div class="home_background" style="background-image:url(images/categoria.jpg)"></div>
 			<div class="home_content_container">
 				<div class="container">
 					<div class="row">
