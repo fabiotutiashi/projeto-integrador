@@ -31,8 +31,14 @@
 									</li>
 									<li><a href="#">Acessórios</a></li>
 									<li><a href="#">Ofertas</a></li>
-									<li><a href="contact.php">Contato</a></li>
+									<li><a href="contact.php">Contato&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
+									
+
+									<a href="login.php">
+									<i class="fas fa-user-circle"></i>
+									</a>
 								</ul>
+								
 							</nav>
 							<div class="header_extra ml-auto">
 								<div class="shopping_cart">
