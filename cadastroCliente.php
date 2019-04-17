@@ -20,8 +20,8 @@ if ($_POST) {
 		$generou = "feminino";
 	}
 	
-$sql = "INSERT INTO usuarios (nome, sobrenome, nasc, emaill, endereco, cidade, cep, senha, confirmar_senha, genero) 
-VALUES (:nome, :sobrenome, :nasc, :emaill, :endereco, :cidade, :cep, :senha, :confirmar_senha, :genero)";
+$sql = "INSERT INTO usuarios (nome, sobrenome, nasc, email, endereco, cidade, cep, senha, confirmar_senha, genero) 
+VALUES (:nome, :sobrenome, :nasc, :email, :endereco, :cidade, :cep, :senha, :confirmar_senha, :genero)";
 
 $query = $db->prepare($sql);
 
@@ -29,13 +29,13 @@ $salvou = $query->execute([
 	":nome" => $nome,
 	":sobrenome" => $sobrenome,
 	":nasc" => $data,
-	":emaill" => $email,
+	":email" => $email,
 	":endereco" => $endereco,
 	":cidade" => $cidade,
 	":cep" => $cep,
 	":senha" => $senha,
 	":confirmar_senha" => $confirmar_senha,
-	":genero" => $genero,
+	":genero" => $genero
 ]);
 }
 ?>
@@ -49,6 +49,7 @@ $salvou = $query->execute([
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Sublime project">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles/css/valida.css">
 <link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
 <link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
@@ -56,6 +57,7 @@ $salvou = $query->execute([
 <link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<script src="js/valida.js" defer></script>
 </head>
 </head>
 <body>
@@ -68,13 +70,17 @@ $salvou = $query->execute([
   </div>
 </div>
 
+<div id="erro" class="alert alert-danger d-none ">
+        Preencha a descrição corretamente!
+      </div>
+
 <!-- cadastro cliente -->
 <div class="container">
 	<form method="post" action="cadastroCliente.php">
   		<div class="form-row">
-    		<div class="form-group col-md-5">
+    		<div class="form-group col-md-5 ">
       			<label for="nome">Nome</label>
-      			<input name="nome" type="text" class="form-control" id="nome" placeholder="Nome">
+      			<input name="nome" type="text"  id="description" placeholder="Nome" class="form-control">
     		</div>
     		<div class="form-group col-md-5">
       			<label for="sobrenome">Sobrenome</label>

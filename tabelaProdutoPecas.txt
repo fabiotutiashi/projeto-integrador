@@ -1,0 +1,18 @@
+
+Produtos categoria peças
+
+INSERT INTO produtos (nomeProduto, descricaoProduto, valor, categoria, imagemFoto)
+ 
+VALUES ("roda", "roda esportiva", 300, "pecas", "images/roda.jpg");
+
+INSERT INTO produtos (nomeProduto, descricaoProduto, valor, categoria, imagemFoto)
+ 
+VALUES ("Carburador", "Carburador para sua moto antiga", 50, "pecas", "images/carburador.jpg");
+
+INSERT INTO produtos (nomeProduto, descricaoProduto, valor, categoria, imagemFoto)
+ 
+VALUES ("Carrente", "Corrente completa", 150, "pecas", "images/corrente.jpg");
+
+INSERT INTO produtos (nomeProduto, descricaoProduto, valor, categoria, imagemFoto)
+ 
+VALUES ("Kit motor", "Kit motor parde de baixo + biela", 200, "pecas", "images/kitbiela.jpg");

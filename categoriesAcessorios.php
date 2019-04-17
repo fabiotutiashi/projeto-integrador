@@ -87,7 +87,7 @@
 
 
 					<?php
-						$consulta = $db->prepare("SELECT * FROM produtos");
+						$consulta = $db->prepare("SELECT * FROM produtos WHERE categoria LIKE 'acessorios'");
 						$consulta->execute();
 						$linhas = $consulta -> rowCount();
 						

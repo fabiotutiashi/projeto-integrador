@@ -1,3 +1,27 @@
+<?php
+
+	require_once 'conn.php'; 
+	   session_start();
+
+
+	$idProduto = $_GET['id'];	
+	
+	if(!isset($_SESSION["itens"])){
+		$_SESSION["itens"] = [];
+	} else if ($idProduto && !in_array($idProduto, $_SESSION["itens"])){
+		array_push($_SESSION["itens"], $idProduto);
+	}
+	
+	$itensCarrinho = $_SESSION["itens"];
+	
+
+?>
+
+if (in_array("mac", $os)) { 
+    echo "Tem mac";
+}
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,23 +84,36 @@
 					</div>
 				</div>
 			</div>
+
+				<?php	foreach($itensCarrinho as $idItem):
+					
+					$query = $db->prepare('SELECT * FROM produtos WHERE id = :id');
+					$query->execute([
+						":id" => $idItem
+						]);
+						
+						$produto = $query->fetch(PDO::FETCH_ASSOC);
+						?>	
+					
 			<div class="row cart_items_row">
 				<div class="col">
+				
+				
 
 					<!-- Cart Item -->
 					<div class="cart_item d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-start">
 						<!-- Name -->
 						<div class="cart_item_product d-flex flex-row align-items-center justify-content-start">
 							<div class="cart_item_image">
-								<div><img src="images/cart_1.jpg" alt=""></div>
+								<div><img src="<?=$produto['imagemFoto']?>" alt=""></div>
 							</div>
 							<div class="cart_item_name_container">
-								<div class="cart_item_name"><a href="#">Smart Phone Deluxe Edition</a></div>
+								<div class="cart_item_name"><h2><?=$produto['nomeProduto']?></h2></div>
 								<div class="cart_item_edit"><a href="#">Edit Product</a></div>
 							</div>
 						</div>
 						<!-- Price -->
-						<div class="cart_item_price">$790.90</div>
+						<div class="cart_item_price"><?=$produto['valor']?></div>
 						<!-- Quantity -->
 						<div class="cart_item_quantity">
 							<div class="product_quantity_container">
@@ -96,6 +133,9 @@
 
 				</div>
 			</div>
+			
+	<?php endforeach ?>
+
 			<div class="row row_cart_buttons">
 				<div class="col">
 					<div class="cart_buttons d-flex flex-lg-row flex-column align-items-start justify-content-start">

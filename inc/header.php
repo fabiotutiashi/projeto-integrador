@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
 <!-- Header -->
 
 <header class="header">
@@ -9,36 +11,28 @@
 							<div class="logo"><a href="#">Sublime.</a></div>
 							<nav class="main_nav">
 								<ul>
-									<li class="hassubs active">
+									<li>
 										<a href="index.php">Home</a>
-										<ul>
-											<li><a href="categories.php">Categoria</a></li>
-											<li><a href="product.php">Produtos</a></li>
-											<li><a href="cart.php">Carrinho</a></li>
-											<li><a href="checkout.php">Confira</a></li>
-											<li><a href="contact.php">Contato</a></li>
-										</ul>
+									
 									</li>
 									<li class="hassubs">
 										<a href="categories.php">Categorias</a>
 										<ul>
-											<li><a href="categories.php">Category</a></li>
-											<li><a href="categories.php">Category</a></li>
-											<li><a href="categories.php">Category</a></li>
-											<li><a href="categories.php">Category</a></li>
-											<li><a href="categories.php">Category</a></li>
+											<li><a href="categoriesPecas.php">Peças</a></li>
+											<li><a href="categoriesAcessorios.php">Acessórios</a></li>											
 										</ul>
 									</li>
-									<li><a href="#">Acessórios</a></li>
-									<li><a href="#">Ofertas</a></li>
+									<li><a href="categoriesAcessorios.php">Acessórios</a></li>
+									<li><a href="index.php">Ofertas</a></li>
 									<li><a href="contact.php">Contato&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></li>
 									
 
 									<li class="hassubs">
 									<i class="fas fa-user"></i>
 										<ul>
-										<li><a href="login.php" class="btn btn-outline-primary" role="button" aria-pressed="true">Faça seu login</a></li>
-										<span class= "float-left">ou</span><a href="cadastroCliente.php"><li> Cadastre-se</a></li>
+										<li><a href="login.php" class="btn btn-primary text-white" role="button" aria-pressed="true">Faça seu login</a></li>
+										<hr>
+										<span class= "float-left">ou</span><a href="checkout.php"><li> Cadastre-se</a></li>
 											
 										</ul>
 									</li>

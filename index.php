@@ -1,3 +1,7 @@
+   <?php require_once 'conn.php'; 
+   session_start();
+   ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -127,7 +131,7 @@
 					</div>
 					<div class="avds_small_content">
 						<div class="avds_title">Capacetes</div>
-						<div class="avds_link"><a href="categories.php">Veja Mais</a></div>
+						<div class="avds_link"><a href="categoriesAcessorios.php">Veja Mais</a></div>
 					</div>
 				</div>
 			</div>
@@ -137,12 +141,14 @@
 					<div class="avds_large_content">
 						<div class="avds_title">Peças para Motores</div>
 						<div class="avds_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed viver ra velit venenatis fermentum luctus.</div>
-						<div class="avds_link avds_link_large"><a href="categories.php">See More</a></div>
+						<div class="avds_link avds_link_large"><a href="categoriesPecas.php">See More</a></div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	
 
 	<!-- Products -->
 
@@ -150,92 +156,37 @@
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					
 					<div class="product_grid">
-
-						<!-- Product -->
-						<div class="product">
-							<div class="product_image"><img src="images/produto_1.jpg" alt=""></div>
-							<div class="product_extra product_new"><a href="categories.php">New</a></div>
-							<div class="product_content">
-								<div class="product_title"><a href="product.php">Smart Phone</a></div>
-								<div class="product_price">$670</div>
-							</div>
-						</div>
-
-						<!-- Product -->
-						<div class="product">
-							<div class="product_image"><img src="images/produto_2.jpg" alt=""></div>
-							<div class="product_extra product_sale"><a href="categories.php">Sale</a></div>
-							<div class="product_content">
-								<div class="product_title"><a href="product.php">Smart Phone</a></div>
-								<div class="product_price">$670</div>
-							</div>
-						</div>
-
-						<!-- Product -->
-						<div class="product">
-							<div class="product_image"><img src="images/produto_3.jpg" alt=""></div>
-							<div class="product_content">
-								<div class="product_title"><a href="product.php">Smart Phone</a></div>
-								<div class="product_price">$670</div>
-							</div>
-						</div>
-
-						<!-- Product -->
-						<div class="product">
-							<div class="product_image"><img src="images/produto_4.jpg" alt=""></div>
-							<div class="product_content">
-								<div class="product_title"><a href="product.php">Smart Phone</a></div>
-								<div class="product_price">$670</div>
-							</div>
-						</div>
-
-						<!-- Product -->
-						<div class="product">
-							<div class="product_image"><img src="images/produto_5.jpg" alt=""></div>
-							<div class="product_content">
-								<div class="product_title"><a href="product.php">Smart Phone</a></div>
-								<div class="product_price">$670</div>
-							</div>
-						</div>
-
-						<!-- Product -->
-						<div class="product">
-							<div class="product_image"><img src="images/produto_6.jpg" alt=""></div>
-							<div class="product_extra product_hot"><a href="categories.php">Hot</a></div>
-							<div class="product_content">
-								<div class="product_title"><a href="product.php">Smart Phone</a></div>
-								<div class="product_price">$670</div>
-							</div>
-						</div>
-
-						<!-- Product -->
-						<div class="product">
-							<div class="product_image"><img src="images/produto_7.jpg" alt=""></div>
-							<div class="product_content">
-								<div class="product_title"><a href="product.php">Smart Phone</a></div>
-								<div class="product_price">$670</div>
-							</div>
-						</div>
-
-						<!-- Product -->
-						<div class="product">
-							<div class="product_image"><img src="images/produto_8.jpg" alt=""></div>
-							<div class="product_extra product_sale"><a href="categories.php">Hot</a></div>
-							<div class="product_content">
-								<div class="product_title"><a href="product.php">Smart Phone</a></div>
-								<div class="product_price">$670</div>
-							</div>
-						</div>
-
-					</div>
+   				
+					   
+					<?php
+						$query = $db->prepare("SELECT * FROM produtos");
+						$query->execute();
+						$produtos = $query->fetchAll(PDO::FETCH_ASSOC);
 						
+						foreach ($produtos as $produto):
+
+					?>
+						
+				<!-- Product -->
+						<div class="product">
+
+							<div class="product_image float-right"><img src=<?=$produto['imagemFoto']?> alt=""></div>
+								<div class="product_content">
+									<div class="product_title"><a href="product.php?id=<?= $produto['id']; ?>"><?=$produto['nomeProduto']?></a></div>
+										<div class="product_price"><?=$produto['valor']?></div>
+									</div>
+								</div>
+									<?php endforeach;	?>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-
+		
+				
+	
 	<!-- Ad -->
 
 	<div class="avds_xl">

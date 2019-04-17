@@ -1,3 +1,18 @@
+<?php require_once 'conn.php'; 
+   session_start();
+
+	$_SESSION["idProduto"] = $_GET['id'];
+
+	$query = $db->prepare('SELECT * FROM produtos WHERE id = :id');
+	$query->execute([
+		":id" => $_SESSION["idProduto"]
+	]);
+
+	$produto = $query->fetch(PDO::FETCH_ASSOC);
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,7 +67,7 @@
 				<!-- Product Image -->
 				<div class="col-lg-6">
 					<div class="details_image">
-						<div class="details_image_large"><img src="images/detalhes1.jpg" alt=""><div class="product_extra product_new"><a href="categories.php">New</a></div></div>
+						<div class="details_image_large"><img src="<?=$produto['imagemFoto']?>" alt=""><div class="product_extra product_new"><a href="categories.php">New</a></div></div>
 						<div class="details_image_thumbnails d-flex flex-row align-items-start justify-content-between">
 							<div class="details_image_thumbnail active" data-image="images/detalhes1.jpg"><img src="images/detalhes1.jpg" alt=""></div>
 							<div class="details_image_thumbnail" data-image="images/detalhes2.jpg"><img src="images/detalhes2.jpg" alt=""></div>
@@ -65,9 +80,9 @@
 				<!-- Product Content -->
 				<div class="col-lg-6">
 					<div class="details_content">
-						<div class="details_name">Smart Phone melhor é o xiaomi</div>
+						<div class="details_name"><?=$produto["nomeProduto"]?></div>
 						<div class="details_discount">$890</div>
-						<div class="details_price">$670</div>
+						<div class="details_price"><?=$produto["valor"]?></div>
 
 						<!-- In Stock -->
 						<div class="in_stock_container">
@@ -75,7 +90,7 @@
 							<span>In Stock</span>
 						</div>
 						<div class="details_text">
-							<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Phasellus id nisi quis justo tempus mollis sed et dui. In hac habitasse platea dictumst. Suspendisse ultrices mauris diam. Nullam sed aliquet elit. Mauris consequat nisi ut mauris efficitur lacinia.</p>
+							<p><?=$produto["descricaoProduto"]?></p>
 						</div>
 
 						<!-- Product Quantity -->
@@ -88,7 +103,7 @@
 									<div id="quantity_dec_button" class="quantity_dec quantity_control"><i class="fa fa-chevron-down" aria-hidden="true"></i></div>
 								</div>
 							</div>
-							<div class="button cart_button"><a href="#">Add to cart</a></div>
+							<div class="button cart_button"><a href="cart.php?id=<?= $produto['id']; ?>">Adicionar</a></div>
 						</div>
 
 						<!-- Share -->
