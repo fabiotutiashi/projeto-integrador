@@ -69,8 +69,8 @@
 					<div class="row">
 						<div class="col">
 							<div class="home_content">
-								<div class="home_title">Smart Phones<span>.</span></div>
-								<div class="home_text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed viverra velit venenatis fermentum luctus.</p></div>
+								<div class="home_title">Produto e Descrição</div>
+								<div class="home_text"><p>Aqui voçê verifica a descricao do produto e adiciona ao carrinho</p></div>
 							</div>
 						</div>
 					</div>
@@ -90,11 +90,7 @@
 					<div class="details_image">
 						<div class="details_image_large"><img src="<?=$produto['imagemFoto']?>" alt=""><div class="product_extra product_new"><a href="categories.php">New</a></div></div>
 						<div class="details_image_thumbnails d-flex flex-row align-items-start justify-content-between">
-							<div class="details_image_thumbnail active" data-image="images/detalhes1.jpg"><img src="images/detalhes1.jpg" alt=""></div>
-							<div class="details_image_thumbnail" data-image="images/detalhes2.jpg"><img src="images/detalhes2.jpg" alt=""></div>
-							<div class="details_image_thumbnail" data-image="images/detalhes3.jpg"><img src="images/detalhes3.jpg" alt=""></div>
-							<div class="details_image_thumbnail" data-image="images/detalhes4.jpg"><img src="images/detalhes4.jpg" alt=""></div>
-						</div>
+							</div>
 					</div>
 				</div>
 
@@ -102,26 +98,26 @@
 				<div class="col-lg-6">
 					<div class="details_content">
 						<div class="details_name"><?=$produto["nomeProduto"]?></div>
-						<div class="details_discount">$890</div>
+						
 						<div class="details_price"><?=$produto["valor"]?></div>
 
 						<!-- In Stock -->
 						<div class="in_stock_container">
-							<div class="availability">Availability:</div>
-							<span>In Stock</span>
+							<div class="availability">Disponobilidade:</div>
+							<span>Em Estoque</span>
 						</div>
 						<div class="details_text">
 							<p><?=$produto["descricaoProduto"]?></p>
 						</div>
 
 						<!-- Product Quantity -->
-						<form action="" method="post">
+						<form action="cart.php" method="post">
 							<div class="product_quantity_container">
 								<input type="hidden" name="id_usuario" value="<?= $id_usuario; ?>">
 								<input type="hidden" name="id_produto" value="<?= $produto['id']; ?>">
 								<input type="hidden" name="valor" value="<?= $produto['valor']; ?>">
 								
-								<button type="submit" class="btn btn-light">Adicionar</button>
+								<button type="submit" class="btn btn-secondary">Adicionar</button>
 							</div>
 						</form>
 							<?php if (isset($salvou) && $salvou === true): ?>
@@ -133,10 +129,10 @@
 						<div class="details_share">
 							<span>Share:</span>
 							<ul>
-								<li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-								<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+							<li><a href="https://br.pinterest.com/"target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+								<li><a href="https://www.instagram.com"target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+								<li><a href="https://pt-br.facebook.com/"target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								<li><a href="https://twitter.com/"target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 							</ul>
 						</div>
 					</div>
@@ -145,13 +141,7 @@
 
 			<div class="row description_row">
 				<div class="col">
-					<div class="description_title_container">
-						<div class="description_title">Description</div>
-						<div class="reviews_title"><a href="#">Reviews <span>(1)</span></a></div>
-					</div>
-					<div class="description_text">
-						<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Phasellus id nisi quis justo tempus mollis sed et dui. In hac habitasse platea dictumst. Suspendisse ultrices mauris diam. Nullam sed aliquet elit. Mauris consequat nisi ut mauris efficitur lacinia.</p>
-					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -163,54 +153,11 @@
 		<div class="container">
 			<div class="row">
 				<div class="col text-center">
-					<div class="products_title">Related Products</div>
+					<div class="products_title"></div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col">
-					
-					<div class="product_grid">
-
-						<!-- Product -->
-						<div class="product">
-							<div class="product_image"><img src="images/produto_1.jpg" alt=""></div>
-							<div class="product_extra product_new"><a href="categories.php">New</a></div>
-							<div class="product_content">
-								<div class="product_title"><a href="product.php">Smart Phone</a></div>
-								<div class="product_price">$670</div>
-							</div>
-						</div>
-
-						<!-- Product -->
-						<div class="product">
-							<div class="product_image"><img src="images//produto_2.jpg" alt=""></div>
-							<div class="product_extra product_sale"><a href="categories.php">Sale</a></div>
-							<div class="product_content">
-								<div class="product_title"><a href="product.php">Smart Phone</a></div>
-								<div class="product_price">$520</div>
-							</div>
-						</div>
-
-						<!-- Product -->
-						<div class="product">
-							<div class="product_image"><img src="images//produto_4.jpg" alt=""></div>
-							<div class="product_content">
-								<div class="product_title"><a href="product.php">Smart Phone</a></div>
-								<div class="product_price">$710</div>
-							</div>
-						</div>
-
-						<!-- Product -->
-						<div class="product">
-							<div class="product_image"><img src="images//produto_11.jpg" alt=""></div>
-							<div class="product_content">
-								<div class="product_title"><a href="product.php">Smart Phone</a></div>
-								<div class="product_price">$330</div>
-							</div>
-						</div>
-
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</div>
@@ -227,12 +174,12 @@
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2">
 					<div class="newsletter_content text-center">
-						<div class="newsletter_title">Subscribe to our newsletter</div>
-						<div class="newsletter_text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros</p></div>
+					<div class="newsletter_title">Receba nossas Ofertas</div>
+						<div class="newsletter_text"><p>Digite seu e-mail para receber ofertas</p></div>
 						<div class="newsletter_form_container">
 							<form action="#" id="newsletter_form" class="newsletter_form">
 								<input type="email" class="newsletter_input" required="required">
-								<button class="newsletter_button trans_200"><span>Subscribe</span></button>
+								<button class="newsletter_button trans_200"><span>Inscreva-se</span></button>
 							</form>
 						</div>
 					</div>
