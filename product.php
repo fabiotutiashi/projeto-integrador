@@ -1,6 +1,8 @@
 <?php require_once 'conn.php'; 
    session_start();
 
+    $id_usuario = $_SESSION["id"];
+
 	$_SESSION["idProduto"] = $_GET['id'];
 
 	$query = $db->prepare('SELECT * FROM produtos WHERE id = :id');
@@ -9,6 +11,25 @@
 	]);
 
 	$produto = $query->fetch(PDO::FETCH_ASSOC);
+
+	if ($_POST) {
+
+		$idUsuario = $_POST["id_usuario"]; 
+		$idProduto = $_POST["id_produto"]; 
+		$valor = $_POST["valor"];
+		$status = " ";
+
+		$query = $db->prepare("INSERT INTO pedido_compra (id_usuario, id_produto, valor_produto, status) 
+		VALUES (:id_usuario, :id_produto, :valor_produto, :status)");
+
+		$salvou = $query->execute([
+			":id_usuario" => $idUsuario,
+			":id_produto" => $idProduto,
+			":valor_produto" => $valor,
+			":status" => $status
+		]);
+
+	}
 ?>
 
 
@@ -94,18 +115,20 @@
 						</div>
 
 						<!-- Product Quantity -->
-						<div class="product_quantity_container">
-							<div class="product_quantity clearfix">
-								<span>Qty</span>
-								<input id="quantity_input" type="text" pattern="[0-9]*" value="1">
-								<div class="quantity_buttons">
-									<div id="quantity_inc_button" class="quantity_inc quantity_control"><i class="fa fa-chevron-up" aria-hidden="true"></i></div>
-									<div id="quantity_dec_button" class="quantity_dec quantity_control"><i class="fa fa-chevron-down" aria-hidden="true"></i></div>
-								</div>
+						<form action="" method="post">
+							<div class="product_quantity_container">
+								<input type="hidden" name="id_usuario" value="<?= $id_usuario; ?>">
+								<input type="hidden" name="id_produto" value="<?= $produto['id']; ?>">
+								<input type="hidden" name="valor" value="<?= $produto['valor']; ?>">
+								
+								<button type="submit" class="btn btn-light">Adicionar</button>
 							</div>
-							<div class="button cart_button"><a href="cart.php?id=<?= $produto['id']; ?>">Adicionar</a></div>
-						</div>
-
+						</form>
+							<?php if (isset($salvou) && $salvou === true): ?>
+								<div class="alert alert-success" role="alert">
+									Produto adicionado ao carrinho!
+								</div>
+							<?php endif; ?>
 						<!-- Share -->
 						<div class="details_share">
 							<span>Share:</span>

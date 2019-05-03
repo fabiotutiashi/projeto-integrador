@@ -21,8 +21,9 @@ if ($_POST) {
         session_start();
 
         $_SESSION["logado"] = true;
+        $_SESSION["id"] = $usuario["id"];
         $_SESSION["nome"] = $usuario["nome"];
-      
+        
 
         header("location: index.php");
     }
@@ -46,13 +47,27 @@ if ($_POST) {
     <link rel="stylesheet" type="text/css" media="screen" href="main.css">
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+
+    
     
    
    
 </head>
 <body>
 <!------ Include the above in your HEAD tag ---------->
+<div class="super_container">
 
+<?php	include 'inc/header.php'; ?>
+<br><br><br><br><br><br><br>
 
 <div class="container">
 
@@ -60,7 +75,7 @@ if ($_POST) {
         Preencha a descrição corretamente!
       </div>
 
-      <?php if (isset($erro) && $erro === true): ?>
+    <?php if (isset($erro) && $erro === true): ?>
         <div class="alert alert-danger" role="alert">
             Usuário ou senha inválidos!
         </div>
@@ -89,5 +104,9 @@ if ($_POST) {
         </div>
     </div>
 </div>
+</div>
+
+
+
 </body>
 </html>

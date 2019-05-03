@@ -8,7 +8,7 @@
 				<div class="row">
 					<div class="col">
 						<div class="header_content d-flex flex-row align-items-center justify-content-start">
-							<div class="logo"><a href="#">Sublime.</a></div>
+							<div class="logo"><a href="#">FJ.Motos</a></div>
 							<nav class="main_nav">
 								<ul>
 									<li>
@@ -30,9 +30,9 @@
 									<li class="hassubs">
 									<i class="fas fa-user"></i>
 										<ul>
-										<li><a href="login.php" class="btn btn-primary text-white" role="button" aria-pressed="true">Faça seu login</a></li>
+										<li><a href="login.php" class="btn btn-secondary text-white" role="button" aria-pressed="true">Faça seu login</a></li>
 										<hr>
-										<span class= "float-left">ou</span><a href="checkout.php"><li> Cadastre-se</a></li>
+										<span class= "float-left">ou</span><a href="cadastro.php"><li> Cadastre-se</a></li>
 											
 										</ul>
 									</li>

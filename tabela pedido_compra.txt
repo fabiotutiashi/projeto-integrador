@@ -1,0 +1,9 @@
+create table pedido_compra (
+	id int(11) primary key not null auto_increment,
+    id_usuario int(11) not null ,
+    id_produto int(11) not null ,
+    valor_produto decimal(10,2) ,
+    quantidade int(11) ,
+    valor_total decimal(10,2) ,
+    status varchar(3)
+);

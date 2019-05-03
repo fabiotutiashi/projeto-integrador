@@ -45,7 +45,7 @@
 								<div class="col">
 									<div class="home_slider_content"  data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
 										<div class="home_slider_title">Uma nova experiência de loja online.</div>
-										<div class="home_slider_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed viverra velit venenatis fermentum luctus.</div>
+										<div class="home_slider_subtitle">Aqui voçê encontra todas as peças e acessórios para sua moto com preço compatível no mercado</div>
 										<div class="button button_light home_button"><a href="#">Compre Agora</a></div>
 									</div>
 								</div>
@@ -62,9 +62,9 @@
 							<div class="row">
 								<div class="col">
 									<div class="home_slider_content"  data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
-										<div class="home_slider_title">A new Online Shop experience.</div>
-										<div class="home_slider_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed viverra velit venenatis fermentum luctus.</div>
-										<div class="button button_light home_button"><a href="#">Shop Now</a></div>
+									<div class="home_slider_title">Uma nova experiência de loja online.</div>
+										<div class="home_slider_subtitle">Aqui voçê encontra todas as peças e acessórios para sua moto com preço compatível no mercado</div>
+										<div class="button button_light home_button"><a href="#">Compre Agora</a></div>
 									</div>
 								</div>
 							</div>
@@ -80,9 +80,9 @@
 							<div class="row">
 								<div class="col">
 									<div class="home_slider_content"  data-animation-in="fadeIn" data-animation-out="animate-out fadeOut">
-										<div class="home_slider_title">A new Online Shop experience.</div>
-										<div class="home_slider_subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed viverra velit venenatis fermentum luctus.</div>
-										<div class="button button_light home_button"><a href="#">Shop Now</a></div>
+									<div class="home_slider_title">Uma nova experiência de loja online.</div>
+										<div class="home_slider_subtitle">Aqui voçê encontra todas as peças e acessórios para sua moto com preço compatível no mercado</div>
+										<div class="button button_light home_button"><a href="#">Compre Agora</a></div>
 									</div>
 								</div>
 							</div>
@@ -100,9 +100,7 @@
 						<div class="col">
 							<div class="home_slider_dots">
 								<ul id="home_slider_custom_dots" class="home_slider_custom_dots">
-									<li class="home_slider_custom_dot active">01.</li>
-									<li class="home_slider_custom_dot">02.</li>
-									<li class="home_slider_custom_dot">03.</li>
+									
 								</ul>
 							</div>
 						</div>
@@ -140,8 +138,8 @@
 				<div class="avds_large_container">
 					<div class="avds_large_content">
 						<div class="avds_title">Peças para Motores</div>
-						<div class="avds_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed viver ra velit venenatis fermentum luctus.</div>
-						<div class="avds_link avds_link_large"><a href="categoriesPecas.php">See More</a></div>
+						<div class="avds_text">Aqui voçê encontra peças para motor de todos os modelos de motos, peças de qualidade originais e similares de primeira linha</div>
+						<div class="avds_link avds_link_large"><a href="categoriesPecas.php">Veja Mais</a></div>
 					</div>
 				</div>
 			</div>
@@ -196,9 +194,9 @@
 					<div class="avds_xl_container clearfix">
 						<div class="avds_xl_background" style="background-image:url(images/avds1.jpg)"></div>
 						<div class="avds_xl_content">
-							<div class="avds_title">Amazing Devices</div>
-							<div class="avds_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus.</div>
-							<div class="avds_link avds_xl_link"><a href="categories.php">See More</a></div>
+							<div class="avds_title">Escolha por Categoria</div>
+							<div class="avds_text">Voçê pode escolher entre peças e acessórios!</div>
+							<div class="avds_link avds_xl_link"><a href="categories.php">Veja Mais</a></div>
 						</div>
 					</div>
 				</div>
@@ -216,9 +214,9 @@
 				<div class="col-lg-4 icon_box_col">
 					<div class="icon_box">
 						<div class="icon_box_image"><img src="images/icon_1.svg" alt=""></div>
-						<div class="icon_box_title">Free Shipping Worldwide</div>
+						<div class="icon_box_title">Frete Gratis</div>
 						<div class="icon_box_text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie.</p>
+							<p>Frete gratis para todo o Brasil</p>
 						</div>
 					</div>
 				</div>
@@ -227,9 +225,9 @@
 				<div class="col-lg-4 icon_box_col">
 					<div class="icon_box">
 						<div class="icon_box_image"><img src="images/icon_2.svg" alt=""></div>
-						<div class="icon_box_title">Free Returns</div>
+						<div class="icon_box_title">Devolução Gratuita</div>
 						<div class="icon_box_text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie.</p>
+							<p>Devoluçao gratuita para todo o Brasil</p>
 						</div>
 					</div>
 				</div>
@@ -238,9 +236,9 @@
 				<div class="col-lg-4 icon_box_col">
 					<div class="icon_box">
 						<div class="icon_box_image"><img src="images/icon_3.svg" alt=""></div>
-						<div class="icon_box_title">24h Fast Support</div>
+						<div class="icon_box_title">Suporte 24 horas</div>
 						<div class="icon_box_text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie.</p>
+							<p>Suporte 24 horas para todo o Brasil</p>
 						</div>
 					</div>
 				</div>
@@ -261,12 +259,12 @@
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2">
 					<div class="newsletter_content text-center">
-						<div class="newsletter_title">Subscribe to our newsletter</div>
-						<div class="newsletter_text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros</p></div>
+					<div class="newsletter_title">Receba nossas Ofertas</div>
+						<div class="newsletter_text"><p>Digite seu e-mail para receber ofertas</p></div>
 						<div class="newsletter_form_container">
 							<form action="#" id="newsletter_form" class="newsletter_form">
 								<input type="email" class="newsletter_input" required="required">
-								<button class="newsletter_button trans_200"><span>Subscribe</span></button>
+								<button class="newsletter_button trans_200"><span>Inscreva-se</span></button>
 							</form>
 						</div>
 					</div>

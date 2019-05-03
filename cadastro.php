@@ -43,7 +43,7 @@ $salvou = $query->execute([
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Checkout</title>
+<title>Cadastro</title>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="Sublime project">
@@ -64,39 +64,22 @@ $salvou = $query->execute([
 	<!-- Home -->
 
 	<div class="home">
-		<div class="home_container">
-			<div class="home_background" style="background-image:url(images/cart.jpg)"></div>
-			<div class="home_content_container">
-				<div class="container">
-					<div class="row">
-						<div class="col">
-							<div class="home_content">
-								<div class="breadcrumbs">
-									<ul>
-										<li><a href="index.php">Home</a></li>
-										<li><a href="cart.php">Shopping Cart</a></li>
-										<li>Checkout</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+		
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container">
+				<h1 class="display-4">Cadastro de usuario</h1>
+				<p class="lead">Use o formulario abaixo para se cadastrar.</p>
 			</div>
-			<div class="jumbotron jumbotron-fluid">
-		<div class="container">
-			<h1 class="display-4">Cadastro de usuario</h1>
-			<p class="lead">Use o formulario abaixo para se cadastrar.</p>
 		</div>
-	</div>
-		</div>
-	</div>
+		
+		
+
 	
 
 	<!-- Checkout -->
 	
 	<div class="checkout">
-		
+	
 			
 
 	
@@ -157,12 +140,16 @@ $salvou = $query->execute([
 		<div class="form-check">
   			<input name="genero" class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="feminino">
   			<label class="form-check-label" for="exampleRadios2">Feminino</label>
-		</div><br><br>	  
+		</div>	  
   		<button type="submit" class="btn btn-primary">Cadastrar</button>
 	</form>	
 	
-</div><br><br><br>
 </div>
+</div>
+</div>
+</div>
+
+
 
 
 		<!-- incluindo o footer -->

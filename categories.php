@@ -34,14 +34,14 @@
 
 	<div class="home">
 		<div class="home_container">
-			<div class="home_background" style="background-image:url(images/imgPecas.png)"></div>
+			<div class="home_background" style="background-image:url(images/acessorios.jpg)"></div>
 			<div class="home_content_container">
 				<div class="container">
 					<div class="row">
 						<div class="col">
 							<div class="home_content">
-								<div class="home_title">Todas as peças para a sua moto<span></span></div>
-								<div class="home_text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros. Sed viverra velit venenatis fermentum luctus.</p></div>
+								<div class="home_title"> Todas as peças para a sua moto</span></div>
+								<div class="home_text"><p>Aqui voçê encontra todas as peças para sua moto com garantia e qualidade!</p></div>
 							</div>
 						</div>
 					</div>
@@ -61,17 +61,16 @@
 					
 					<!-- Product Sorting -->
 					<div class="sorting_bar d-flex flex-md-row flex-column align-items-md-center justify-content-md-start">
-						<div class="results">Showing <span>12</span> results</div>
+						
 						<div class="sorting_container ml-md-auto">
 							<div class="sorting">
 								<ul class="item_sorting">
 									<li>
-										<span class="sorting_text">Sort by</span>
+										<span class="sorting_text">Escolha Por</span>
 										<i class="fa fa-chevron-down" aria-hidden="true"></i>
 										<ul>
-											<li class="product_sorting_btn" data-isotope-option='{ "sortBy": "original-order" }'><span>Default</span></li>
-											<li class="product_sorting_btn" data-isotope-option='{ "sortBy": "price" }'><span>Price</span></li>
-											<li class="product_sorting_btn" data-isotope-option='{ "sortBy": "stars" }'><span>Name</span></li>
+										<li class="product_sorting_btn" data-isotope-option='{ "sortBy": "original-order" }'><span>Padrão</span></li>
+											<li class="product_sorting_btn" data-isotope-option='{ "sortBy": "price" }'><span>Preço</span></li>
 										</ul>
 									</li>
 								</ul>
@@ -105,13 +104,7 @@
 						</div>
 						<?php endforeach;	?>						
 					</div>
-					<div class="product_pagination">
-						<ul>
-							<li class="active"><a href="#">01.</a></li>
-							<li><a href="#">02.</a></li>
-							<li><a href="#">03.</a></li>
-						</ul>
-					</div>
+					
 						
 				</div>
 			</div>
@@ -128,9 +121,9 @@
 				<div class="col-lg-4 icon_box_col">
 					<div class="icon_box">
 						<div class="icon_box_image"><img src="images/icon_1.svg" alt=""></div>
-						<div class="icon_box_title">Free Shipping Worldwide</div>
+						<div class="icon_box_title">Frete Gratis</div>
 						<div class="icon_box_text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie.</p>
+							<p>Frete gratis para todo o Brasil</p>
 						</div>
 					</div>
 				</div>
@@ -139,9 +132,9 @@
 				<div class="col-lg-4 icon_box_col">
 					<div class="icon_box">
 						<div class="icon_box_image"><img src="images/icon_2.svg" alt=""></div>
-						<div class="icon_box_title">Free Returns</div>
+						<div class="icon_box_title">Devolução Gratuita</div>
 						<div class="icon_box_text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie.</p>
+							<p>Devoluçao gratuita para todo o Brasil</p>
 						</div>
 					</div>
 				</div>
@@ -150,9 +143,9 @@
 				<div class="col-lg-4 icon_box_col">
 					<div class="icon_box">
 						<div class="icon_box_image"><img src="images/icon_3.svg" alt=""></div>
-						<div class="icon_box_title">24h Fast Support</div>
+						<div class="icon_box_title">Suporte 24 horas</div>
 						<div class="icon_box_text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie.</p>
+							<p>Suporte 24 horas para todo o Brasil</p>
 						</div>
 					</div>
 				</div>
@@ -173,12 +166,12 @@
 			<div class="row">
 				<div class="col-lg-8 offset-lg-2">
 					<div class="newsletter_content text-center">
-						<div class="newsletter_title">Subscribe to our newsletter</div>
-						<div class="newsletter_text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam a ultricies metus. Sed nec molestie eros</p></div>
+					<div class="newsletter_title">Receba nossas Ofertas</div>
+						<div class="newsletter_text"><p>Digite seu e-mail para receber ofertas</p></div>
 						<div class="newsletter_form_container">
 							<form action="#" id="newsletter_form" class="newsletter_form">
 								<input type="email" class="newsletter_input" required="required">
-								<button class="newsletter_button trans_200"><span>Subscribe</span></button>
+								<button class="newsletter_button trans_200"><span>Inscreva-se</span></button>
 							</form>
 						</div>
 					</div>
