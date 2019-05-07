@@ -111,7 +111,7 @@
 						</div>
 
 						<!-- Product Quantity -->
-						<form action="cart.php" method="post">
+						<form action="" method="post">
 							<div class="product_quantity_container">
 								<input type="hidden" name="id_usuario" value="<?= $id_usuario; ?>">
 								<input type="hidden" name="id_produto" value="<?= $produto['id']; ?>">
@@ -124,6 +124,7 @@
 								<div class="alert alert-success" role="alert">
 									Produto adicionado ao carrinho!
 								</div>
+								
 							<?php endif; ?>
 						<!-- Share -->
 						<div class="details_share">

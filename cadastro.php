@@ -73,6 +73,11 @@ $salvou = $query->execute([
 		</div>
 		
 		
+		<?php if (isset($salvou) && $salvou === true): ?>
+								<div class="alert alert-success" role="alert">
+								Cadastro realizado com sucesso!
+								</div>
+							<?php endif; ?>
 
 	
 
@@ -80,8 +85,7 @@ $salvou = $query->execute([
 	
 	<div class="checkout">
 	
-			
-
+	
 	
 
 <div id="erro" class="alert alert-danger d-none ">
@@ -90,7 +94,7 @@ $salvou = $query->execute([
 
 <!-- cadastro cliente -->
 <div class="container">
-	<form method="post" action="cadastroCliente.php">
+	<form method="post" action="cadastro.php">
   		<div class="form-row">
     		<div class="form-group col-md-5 ">
       			<label for="nome">Nome</label>

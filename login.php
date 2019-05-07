@@ -87,7 +87,7 @@ if ($_POST) {
             <div class="account-wall">
                 <img class="profile-img" src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=120"
                     alt="">
-                <form class="form-signin" id="formAdicionarTarefa" action="login.php" method="POST">
+                <form class="form-signin" id="formAdicionarTarefa" action="index.php" method="POST">
                     <input name="email" id='description' type="text" class="form-control"  placeholder="Email"  ><br>
                     <input name="senha" type="password" class="form-control" placeholder="Password" >
                     <button class="btn btn-lg btn-primary btn-block" type="submit">
