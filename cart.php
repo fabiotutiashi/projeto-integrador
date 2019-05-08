@@ -3,7 +3,17 @@
 	require_once 'conn.php'; 
 	session_start();
 
+
+
 	$id_usuario = $_SESSION["id"];
+
+	if ($_GET && $_GET["id"]) {
+        $query = $db->prepare('DELETE FROM pedido_compra WHERE id_produto = :id');
+        
+        $deletou = $query->execute([
+            ":id" => $_GET["id"]
+        ]);
+    }
 
 	$query = $db->prepare('SELECT p.nomeProduto as nomeProduto, p.imagemFoto as imagemFoto,
 							pc.id_usuario as id_usuario, pc.id_produto as id_produto,
@@ -25,13 +35,24 @@
         $quantidade = $_REQUEST['quantidade'];
         $valor_total = $_REQUEST['custo_total'];
 		$status = $_REQUEST['status'];
+
+		$query = $db->prepare("SELECT * FROM pedido_compra WHERE id_usuario = :id_usuario AND status = :status"); 
+        $query->execute([
+			":id_usuario" => $id_usuario,
+			":status" => " "
+        ]);
+        $pedidos = $query->fetchAll(PDO::FETCH_ASSOC);
 		
         for($i = 0; $i < count($id_produto); $i++)  {
-			$result = "UPDATE pedido_compra set quantidade = '$quantidade[$i]', valor_total = '$valor_total[$i]', status = '$status[$i]' WHERE id_usuario = '$id_usuario' AND id_produto = '$id_produto[$i]' ";  
+			if($pedidos > $i){
+				$result = "UPDATE pedido_compra set quantidade = '$quantidade[$i]', valor_total = '$valor_total[$i]', status = '$status[$i]' WHERE id_usuario = '$id_usuario' AND id_produto = '$id_produto[$i]' "; 
+			}
 			$resultado = $db->query($result);   
 		}
 		$ítensCarrinho = [];
 	}
+
+
     
 ?>
 
@@ -93,6 +114,7 @@
 						<th><div class="cart_info_col cart_info_col_price">Valor</div></th>
 						<th><div class="cart_info_col cart_info_col_quantity">Quantidade</div></th>
 						<th><div class="cart_info_col cart_info_col_total">Total</div></th>
+						<th><div class="cart_info_col cart_info_col_total">Açoes</div></th>
 					</tr>
 				</thead>
 				<tbody>
@@ -132,6 +154,14 @@
 												<input type="text" style="border:none;" class="" id="custo_total" name="custo_total[]">
 											</td>
 										</div>	
+
+										<div class="cart_item_name_container">
+											<td>
+											<a href="cart.php?id=<?= $item["id_produto"] ?>">
+												<i class="fas fa-trash-alt"></i>
+											</a>
+											</td>
+										</div>
 									</tr>
 
 								<?php endforeach;?>			
@@ -146,13 +176,17 @@
 			</div>
 			<!-- Finalizando Compra -->
 			<div class="col-12">
-				<input type="submit" class="btn btn-primary" value="Finalizar Compra" id="finalizar" name="finalizar">
+				<input  type="submit" class="btn btn-primary" value="Finalizar Compra" id="finalizar" name="finalizar">
 			</div>
 		</form>
+	
 	</div><br><br>
+	
 
 	<!-- incluindo o footer -->
 	<?php include 'inc/footer.php';?>
+	
+	
 
 <script>
     /* Ínicio de Função criada para calcular dinamicamente o preço * quantidade e mostrar o resultado total por produto e por fim abaixo da tabela o total da compra */
@@ -178,6 +212,34 @@
     /* Fim de Função criada para calcular dinamicamente o preço * quantidade e mostrar o resultado total por produto e por fim abaixo da tabela o total da compra */
     sumIt()
 </script>
+
+ <!-- SCRIPT PAGAR.ME -->
+ <script src="https://assets.pagar.me/checkout/1.1.0/checkout.js"></script>
+  </head>
+  <body>
+    <button id="pay-button">Abrir modal de pagamento</button>
+
+    <script>
+    var button = document.querySelector('button');
+
+    // Abrir o modal ao clicar no botão
+    button.addEventListener('click', function() {
+
+      // inicia a instância do checkout
+      var checkout = new PagarMeCheckout.Checkout({
+        encryption_key: 'SUA ENCRYPTION KEY',
+        success: function(data) {
+          console.log(data);
+        },
+        error: function(err) {
+        	console.log(err);
+        },
+        close: function() {
+        	console.log('The modal has been closed.');
+        }
+      });
+
+      
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>

@@ -98,43 +98,43 @@ $salvou = $query->execute([
   		<div class="form-row">
     		<div class="form-group col-md-5 ">
       			<label for="nome">Nome</label>
-      			<input name="nome" type="text"  id="description" placeholder="Nome" class="form-control">
+      			<input name="nome" type="text"  id="description" placeholder="Nome" class="form-control" required>
     		</div>
     		<div class="form-group col-md-5">
       			<label for="sobrenome">Sobrenome</label>
-      			<input name="sobrenome" type="text" class="form-control" id="sobrenome" placeholder="Sobrenome">
+      			<input name="sobrenome" type="text" class="form-control" id="sobrenome" placeholder="Sobrenome" required>
     		</div>
 			<div class="form-group col-md-2">
       			<label for="data">Data de nascimento</label>
-      			<input name="data" type="date" class="form-control" id="data" placeholder="Data">
+      			<input name="data" type="date" class="form-control" id="data" placeholder="Data" required>
     		</div>
   		</div>
   		<div class="form-group">
     		<label for="email">Email</label>
-   	 		<input name="email" type="email" class="form-control" id="email" placeholder="Email">
+   	 		<input name="email" type="email" class="form-control" id="email" placeholder="Email" required>
   		</div>
   		<div class="form-row">
   			<div class="form-group col-md-5">
     			<label for="endereco">Endereço</label>
-    			<input name="endereco" type="text" class="form-control" id="endereco" placeholder="R/A">
+    			<input name="endereco" type="text" class="form-control" id="endereco" placeholder="R/A" required>
   			</div>  
     		<div class="form-group col-md-5">
       			<label for="cidade">Cidade</label>
-      			<input name="cidade" type="text" class="form-control" id="cidade" placeholder="Cidade">
+      			<input name="cidade" type="text" class="form-control" id="cidade" placeholder="Cidade" required>
     		</div>
     		<div class="form-group col-md-2">
       			<label for="cep">Cep</label>
-      			<input name="cep" type="text" id="cep" class="form-control" placeholder="Cep">        
+      			<input name="cep" type="text" id="cep" class="form-control" placeholder="Cep" required>        
     		</div>
   		</div>
 		  <div class="form-row">
     		<div class="form-group col-md-6">
       			<label for="senha">Senha</label>
-      			<input name="senha" type="password" class="form-control" id="nome" placeholder="Senha">
+      			<input name="senha" type="password" class="form-control" id="nome" placeholder="Senha" required>
     		</div>
     		<div class="form-group col-md-6">
       			<label for="confirma">Confirmar Senha</label>
-      			<input name="confirmar_senha" type="password" class="form-control" id="sobrenome" placeholder="Confirmar Senha">
+      			<input name="confirmar_senha" type="password" class="form-control" id="sobrenome" placeholder="Confirmar Senha" required>
     		</div>			
   		</div>  		
   		<div class="form-check">
